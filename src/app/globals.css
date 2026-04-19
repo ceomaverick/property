@@ -3,13 +3,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Map requested variables to Next.js font variables */
+  --e-global-typography-primary-font-family: var(--font-atkinson);
+  --e-global-typography-secondary-font-family: var(--font-urbanist);
+  --e-global-typography-text-font-family: var(--font-atkinson);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Custom Font Families */
+  --font-primary: var(--e-global-typography-primary-font-family);
+  --font-secondary: var(--e-global-typography-secondary-font-family);
+  --font-text: var(--e-global-typography-text-font-family);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +30,9 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-text), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary), sans-serif;
 }

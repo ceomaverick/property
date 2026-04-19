@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Project-specific ignores
+/ignore
+/docs
+/aiskills
+/design
+/public/images/unused
+/public/unused

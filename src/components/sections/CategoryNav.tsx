@@ -8,27 +8,27 @@ const categories = [
   {
     name: "APARTMENT",
     count: "20K",
-    icon: "/demo-real-estate-icon-apartment.svg",
+    icon: "/apartment-property-icon.svg",
   },
   {
     name: "CONDOMINIUM",
     count: "18K",
-    icon: "/demo-real-estate-icon-condominium.svg",
+    icon: "/condominium-property-icon.svg",
   },
   {
     name: "HOME",
     count: "22K",
-    icon: "/demo-real-estate-icon-home.svg",
+    icon: "/home-property-icon.svg",
   },
   {
     name: "OFFICE",
     count: "09K",
-    icon: "/demo-real-estate-icon-office.svg",
+    icon: "/office-property-icon.svg",
   },
   {
     name: "SHOP",
     count: "20K",
-    icon: "/demo-real-estate-icon-shop.svg",
+    icon: "/shop-property-icon.svg",
   }
 ];
 

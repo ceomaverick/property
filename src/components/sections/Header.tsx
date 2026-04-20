@@ -7,11 +7,11 @@ import { Phone, ArrowRight, House, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const propertyTypes = [
-  { name: "Apartment", count: "20k", icon: "/demo-real-estate-icon-apartment.svg" },
-  { name: "Condominium", count: "18k", icon: "/demo-real-estate-icon-condominium.svg" },
-  { name: "Home", count: "22k", icon: "/demo-real-estate-icon-home.svg" },
-  { name: "Office", count: "09k", icon: "/demo-real-estate-icon-office.svg" },
-  { name: "Shop", count: "20k", icon: "/demo-real-estate-icon-shop.svg" },
+  { name: "Apartment", count: "20k", icon: "/apartment-property-icon.svg" },
+  { name: "Condominium", count: "18k", icon: "/condominium-property-icon.svg" },
+  { name: "Home", count: "22k", icon: "/home-property-icon.svg" },
+  { name: "Office", count: "09k", icon: "/office-property-icon.svg" },
+  { name: "Shop", count: "20k", icon: "/shop-property-icon.svg" },
 ];
 
 const agents = [
@@ -42,13 +42,13 @@ export default function Header() {
         <nav className="hidden lg:flex items-center gap-10">
           <Link
             href="/"
-            className="text-[#00b15e] font-bold text-[13px] tracking-wide transition-colors"
+            className="text-[#00b15e] font-bold text-[14px] tracking-wide transition-colors"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-gray-900 hover:text-[#00b15e] font-bold text-[13px] tracking-wide transition-colors"
+            className="text-gray-900 hover:text-[#00b15e] font-bold text-[14px] tracking-wide transition-colors"
           >
             About
           </Link>
@@ -59,7 +59,7 @@ export default function Header() {
             onMouseEnter={() => setActiveDropdown("rent")}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button className="flex items-center gap-1 text-gray-900 hover:text-[#00b15e] font-bold text-[13px] tracking-wide transition-colors cursor-pointer outline-none">
+            <button className="flex items-center gap-1 text-gray-900 hover:text-[#00b15e] font-bold text-[14px] tracking-wide transition-colors cursor-pointer outline-none">
               Rent <ChevronDown size={14} className={`transition-transform duration-300 ${activeDropdown === "rent" ? "rotate-180" : ""}`} />
             </button>
             <AnimatePresence>
@@ -96,11 +96,8 @@ export default function Header() {
             onMouseEnter={() => setActiveDropdown("sell")}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button className="flex items-center gap-2 text-gray-900 hover:text-[#00b15e] font-bold text-[13px] tracking-wide transition-colors cursor-pointer outline-none">
+            <button className="flex items-center gap-2 text-[#ff5a5f] font-bold text-[14px] tracking-wide transition-colors cursor-pointer outline-none">
               Sell
-              <span className="px-1.5 py-0.5 text-[9px] font-black uppercase text-[#ff5a5f] bg-[#fff0f0] rounded-sm">
-                Hot
-              </span>
               <ChevronDown size={14} className={`transition-transform duration-300 ${activeDropdown === "sell" ? "rotate-180" : ""}`} />
             </button>
             <AnimatePresence>
@@ -137,7 +134,7 @@ export default function Header() {
             onMouseEnter={() => setActiveDropdown("agents")}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button className="flex items-center gap-1 text-gray-900 hover:text-[#00b15e] font-bold text-[13px] tracking-wide transition-colors cursor-pointer outline-none">
+            <button className="flex items-center gap-1 text-gray-900 hover:text-[#00b15e] font-bold text-[14px] tracking-wide transition-colors cursor-pointer outline-none">
               Agents <ChevronDown size={14} className={`transition-transform duration-300 ${activeDropdown === "agents" ? "rotate-180" : ""}`} />
             </button>
             <AnimatePresence>
@@ -172,13 +169,13 @@ export default function Header() {
 
           <Link
             href="/blog"
-            className="text-gray-900 hover:text-[#00b15e] font-bold text-[13px] tracking-wide transition-colors"
+            className="text-gray-900 hover:text-[#00b15e] font-bold text-[14px] tracking-wide transition-colors"
           >
             Blog
           </Link>
           <Link
             href="/contact"
-            className="text-gray-900 hover:text-[#00b15e] font-bold text-[13px] tracking-wide transition-colors"
+            className="text-gray-900 hover:text-[#00b15e] font-bold text-[14px] tracking-wide transition-colors"
           >
             Contact
           </Link>
@@ -189,7 +186,7 @@ export default function Header() {
           <button className="w-11 h-11 flex items-center justify-center rounded-full bg-[#e6f7ef] text-[#00b15e] transition-all hover:bg-[#00b15e] hover:text-white group">
             <Phone size={18} />
           </button>
-          <button className="hidden sm:flex items-center gap-2 h-11 px-5 bg-[#00b15e] text-white font-bold text-[13px] rounded-md hover:bg-[#00924e] transition-all tracking-wide">
+          <button className="hidden sm:flex items-center gap-2 h-11 px-5 bg-[#00b15e] text-white font-bold text-[14px] rounded-md hover:bg-[#00924e] transition-all tracking-wide">
             Buy property
             <ArrowRight size={16} strokeWidth={2.5} />
           </button>

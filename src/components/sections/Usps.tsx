@@ -38,7 +38,7 @@ export default function Usps() {
                 className="flex items-start gap-6 group"
               >
                 <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center flex-shrink-0">
-                   <Image src="/demo-real-estate-icon-04.png" alt="Star rating icon for appreciated projects" width={36} height={36} />
+                   <Image src="/trophy-quality-icon.png" alt="Star rating icon for appreciated projects" width={36} height={36} />
                 </div>
                 <div>
                   <h3 className="font-bold text-[#262b35] text-xl mb-1">Most appreciated projects</h3>
@@ -56,7 +56,7 @@ export default function Usps() {
                 className="flex items-start gap-6 group"
               >
                 <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center flex-shrink-0">
-                   <Image src="/demo-real-estate-icon-05.png" alt="Home rental icon for high income projects" width={36} height={36} />
+                   <Image src="/handshake-commitment-icon.png" alt="Home rental icon for high income projects" width={36} height={36} />
                 </div>
                 <div>
                   <h3 className="font-bold text-[#262b35] text-xl mb-1">Highest rental income projects</h3>

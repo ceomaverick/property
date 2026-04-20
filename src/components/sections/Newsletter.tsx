@@ -41,6 +41,7 @@ export default function Newsletter() {
                  src="/newsletter-airplane.webp" 
                  alt="Paper airplane illustration representing newsletter subscription" 
                  fill 
+                 sizes="(max-width: 1024px) 96px, 112px"
                  className="object-contain"
                />
             </motion.div>

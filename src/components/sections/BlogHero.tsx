@@ -13,6 +13,7 @@ export default function BlogHero() {
           src="/luxury-living-room-interior-design.jpg"
           alt="Luxury living room interior design journal and insights"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />

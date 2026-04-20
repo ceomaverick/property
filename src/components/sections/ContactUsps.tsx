@@ -20,6 +20,7 @@ export default function ContactUsps() {
                 src="/trophy-quality-icon.png" 
                 alt="Award trophy icon representing our quality work" 
                 fill 
+                sizes="64px"
                 className="object-contain"
               />
             </div>
@@ -38,6 +39,7 @@ export default function ContactUsps() {
                 src="/handshake-commitment-icon.png" 
                 alt="Handshake icon representing our promises and commitment" 
                 fill 
+                sizes="64px"
                 className="object-contain"
               />
             </div>

@@ -13,6 +13,7 @@ export default function ContactHero() {
           src="/contact-hero.webp"
           alt="Contact us for your real estate journey - Crafto Real Estate"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />

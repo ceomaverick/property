@@ -47,3 +47,8 @@ next-env.d.ts
 /design
 /public/images/unused
 /public/unused
+
+# global repo config boundaries
+.env*.local
+/dist
+/.turbo
